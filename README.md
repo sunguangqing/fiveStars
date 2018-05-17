@@ -103,8 +103,6 @@ https://sunguangqing.github.io/fiveStars/evaluate.html
 })();
 ```
 
-图片上传预览请点击这里 [图片上传预览](https://github.com/sunguangqing/imgUpload)
-
 
 ### JS校验输入框还可以输入多少个字
 
@@ -158,3 +156,5 @@ function residualFigure(txt, residue, max){
  residualFigure(".surplus-number .textarea", ".num", 200);
 ```
 
+
+### 图片上传预览请点击这里 [图片上传预览](https://github.com/sunguangqing/imgUpload)
