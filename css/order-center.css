@@ -1,0 +1,371 @@
+/*reset css*/
+body, div, p, input, button, textarea, select, em, img, h1, h2, h3, h4, h5, h6, dl, dd, dt, ul, ol, li, a, i,
+table, tbody, thead, th, td, b, em  {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul, ol, li {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, textarea, select, button, img {
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #595959;
+}
+:focus {
+    outline: none;
+}
+/*浮动*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/*清除浮动*/
+.clearfix {
+    clear: both;
+    zoom: 1;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+/*行内元素*/
+.inline, span, a, b, i, em {
+    display: inline-block;
+}
+/*按钮*/
+[class$="-btn"]{
+    cursor: pointer;
+}
+/*开始*/
+body{
+    color: #595959;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.w1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+a:hover{
+    color: #ff5722;
+    text-decoration: underline;
+}
+input[type = text], input[type = password]{
+    padding: 0 12px;
+}
+button, input[type = submit], input[type = button]{
+    cursor: pointer;
+}
+.message{
+    text-align: center;
+    color: #8c8c8c;
+}
+
+/*我的订单*/
+.use-dl {
+    padding-top: 25px;
+    padding-left: 25px;
+}
+.use-dl dl{
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.use-dl dt{
+    width: 108px;
+    min-height: 20px;
+    text-align: right;
+    padding-right: 20px;
+}
+.use-dl dt .required{
+    position: relative;
+    top: 7px;
+    color: #f5222d;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.use-dl dd{
+    width: 690px;
+}
+.use-dl select, .use-dl textarea, .use-dl .dis-input{
+    width: 262px;
+    height: 32px;
+    border: 1px solid #d9d9d9;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.use-dl select, .use-dl .dis-input{
+    width: 185px;
+}
+.use-dl .dis-input{
+    color: #bfbfbf;
+    background-color: #f5f5f5;
+}
+.use-dl textarea{
+    width: 690px;
+    height: 110px;
+    resize: none;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    padding: 5px 10px;
+}
+/*剩余字数*/
+.surplus-number{
+    position: relative;
+}
+.surplus-number .num-wrap{
+    position: absolute;
+    bottom: 18px;
+    right: 15px;
+    color: #bfbfbf;
+}
+/*图片上传*/
+.imgUpload{
+    width: calc(100% - 200px);
+    width: -webkit-calc(100% - 200px);
+    width: -moz-calc(100% - 200px);
+}
+.imgUpload .imgBox{
+    position: relative;
+    height: 48px;
+}
+.imgUpload .imgBox li, .imgUpload .imgFile{
+    float: left;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+}
+.imgUpload .imgBox li img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d9d9d9;
+}
+.imgUpload .imgFile{
+    background: url(../images/upload-img.png) no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+.imgUpload .imgFile input{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+}
+.imgUpload .imgPrompt{
+    line-height: 48px;
+    color: #8c8c8c;
+}
+.imgUpload .imgPrompt i{
+    color: #f90;
+    font-weight: bold;
+}
+.imgBox .imgDel{
+    display: none;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    right: 0;
+    top: 0;
+    left: auto;
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.imgBox .imgDel i{
+    width: 20px;
+    height: 20px;
+    background: url("../images/shop-sprite.png") no-repeat -323px -10px;
+    margin-top: 3.5px;
+}
+.imgUpload .imgBox li:hover .imgDel{
+    display: block;
+}
+.imgUpload .explain{
+    color: #8c8c8c;
+    padding: 15px 0 10px;
+}
+.imgUpload .explain2{
+    line-height: 48px;
+    color: #aaa;
+}
+/*成功*/
+.success-message{
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+}
+/*订单评价*/
+.text-center{
+    text-align: center;
+}
+.evaluate-top .success-message{
+    padding-bottom: 20px;
+}
+.evaluate-cont .success-message{
+    padding-bottom: 12px;
+}
+.evaluate-cont .title{
+    padding-bottom: 25px;
+}
+.evaluate-cont .thx{
+    margin-bottom: 28px;
+}
+.evaluate-middle{
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    margin-top: 15px;
+}
+.evaluate-list{
+    height: 317px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.evaluate-middle .use-dl{
+    padding: 30px 0 0 10px;
+}
+.evaluate-middle .use-dl dl{
+    margin-bottom: 12px;
+}
+.evaluate-list .use-dl dl:first-child{
+    margin-bottom: 20px;
+}
+.evaluate-list:last-child{
+    border-bottom: 0;
+}
+.evaluate-middle .left{
+    width: 330px;
+    text-align: center;
+    border-right: 1px solid #e8e8e8;
+    padding: 0 55px;
+}
+.evaluate-list .left{
+    height: 317px;
+}
+.evaluate-list .pic{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border: 1px solid #e8e8e8;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.evaluate-list .pic img{
+    max-width: 136px;
+    max-height: 136px;
+}
+.evaluate-list .name{
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.evaluate-list .color-a{
+    font-size: 12px;
+    line-height: 16px;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+}
+
+/*包裹*/
+.wrap{
+    float: left;
+    position: relative;
+    width: 130px;
+    height: 19px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+/*默认*/
+.default{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 20px;
+    background: url("../images/star.png") repeat-x;
+}
+.default li{
+    float: left;
+    position: relative;
+    z-index: 3;
+    width: 26px;
+    height: 19px;
+}
+/*点亮*/
+.light{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 20px;
+    background: url("../images/star.png") repeat-x 0 -21px;
+}
+/*显示评分*/
+.show{
+    width: 35px;
+    color: #f60;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.evaluate-bottom{
+    height: 204px;
+    margin-top: 20px;
+}
+.evaluate-bottom .left{
+    height: 204px;
+    padding-top: 20px;
+}
+.evaluate-bottom .use-dl{
+    padding-top: 62px;
+}
+.evaluate-bottom .left > a > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.evaluate-bottom .left .shop-name{
+    display: block;
+    font-weight: bold;
+    line-height: 50px;
+}
+.evaluate-bottom .left  p{
+    color: #999;
+    font-size: 12px;
+}
+.evaluate-btn{
+    clear: both;
+}
+.evaluate-btn input{
+    line-height: 48px;
+    color: #fff;
+    font-size: 16px;
+    width: 262px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #ff5722;
+    margin: 22px auto 0;
+}
