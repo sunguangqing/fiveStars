@@ -2,6 +2,8 @@
 
 https://sunguangqing.github.io/fiveStars/evaluate.html
 
+>直接在页面中插入如下HTML结构，引入CSS代码和JS代码即可
+
 #### `HTML结构：`
 ```HTML
 <div class="stars clearfix">
@@ -65,6 +67,7 @@ https://sunguangqing.github.io/fiveStars/evaluate.html
     color: #f60;
     font-size: 12px;
     margin-left: 15px;
+    margin-top: 6px;
 }
 
 ```
