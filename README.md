@@ -4,7 +4,7 @@ https://sunguangqing.github.io/fiveStars/evaluate.html
 
 #### `HTML结构：`
 ```HTML
-<dd class="stars">
+<div class="stars clearfix">
   <div class="wrap">
       <div class="default">
           <ul class="clearfix">
@@ -18,7 +18,7 @@ https://sunguangqing.github.io/fiveStars/evaluate.html
       <div class="light" star="4.7"></div>
   </div>
   <span class="show"><i></i>分</span>
-</dd>
+</div>
 ```
 
 
