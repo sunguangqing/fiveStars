@@ -104,3 +104,57 @@ https://sunguangqing.github.io/fiveStars/evaluate.html
 ```
 
 图片上传预览请点击这里 [图片上传预览](https://github.com/sunguangqing/imgUpload)
+
+
+### JS校验输入框还可以输入多少个字
+
+#### `HTML结构：`
+```HTML
+<div class="surplus-number">
+  <textarea class="textarea" maxlength="" placeholder=""></textarea>
+  <div class="num-wrap">还可以输入<span class="num">200</span>字</div>
+</div>
+```
+
+#### `CSS代码： `
+```CSS
+/*剩余字数*/
+.surplus-number{
+    position: relative;
+}
+.surplus-number .num-wrap{
+    position: absolute;
+    bottom: 18px;
+    right: 15px;
+    color: #bfbfbf;
+}
+```
+#### `JS代码：`
+```Javascript
+// 剩余字数
+function residualFigure(txt, residue, max){
+    function FXnumber() {
+        var content = $(txt).val(),
+            len = content.length,
+            residual_number = max - len;
+        if(residual_number < 0){
+            residual_number = 0;
+        }
+        if(len > max){
+            len = max;
+        }
+         //更改剩余数字数值
+        $(txt).siblings().find(residue).text(residual_number);
+    }
+    $(txt).on("keyup", FXnumber);
+    
+    //页面初始化  判断是否需要调用该函数
+    if(typeof $(txt).val() !== 'undefined'){
+        FXnumber();
+    }
+}
+
+//调用residualFigure函数
+ residualFigure(".surplus-number .textarea", ".num", 200);
+```
+
